@@ -31,7 +31,7 @@ function ProductForm({
               label={'Título'}
               value={getForm().title}
               onChange={(event: any) =>
-                setForm('title', event?.target.value)
+                setForm('title', event?.target.value.toUpperCase())
               }
               errorMessages={getValidations('title')}
               onBlur={() => validateForm('title')}
