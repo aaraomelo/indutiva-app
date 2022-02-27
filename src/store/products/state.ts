@@ -4,7 +4,18 @@ export const productsInitialState: ProductState = {
       pending: false,
       failed: false,
       suceeded: false,
+    },
+    postProduct: {
+      pending: false,
+      failed: false,
+      suceeded: false,
     }
   },
-  products: []
+  productForm: {
+    title: "title react",
+    image: "image react",
+    value: 100,
+    description: "description react"
+  },
+  products: [],
 }
