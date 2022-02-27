@@ -21,6 +21,7 @@ export default createReducer(productsInitialState,
       })
       .addCase(unshiftProduct, (state, action) => {
         state.products.unshift(action.payload);
+        state.search.unshift(action.payload);
       })
       .addCase(getProductsStatus, (state, action) => {
         state.requests.getProducts[action.payload.status] = action.payload.value;
@@ -38,7 +39,7 @@ export default createReducer(productsInitialState,
       })
       .addCase(setProductsSearch, (state, action) => {
         state.search = state.products.filter((product) =>
-          product.title.includes(action.payload.search)
+          product.title.includes(action.payload.search.toUpperCase())
         )
       })
   }
