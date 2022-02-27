@@ -4,6 +4,7 @@ type ProductState = {
         postProduct: IRequest
     },
     products: IProduct[]
+    search: IProduct[]
     productForm: IProduct
     validations: IProductValidations
     isValidProduct: boolean

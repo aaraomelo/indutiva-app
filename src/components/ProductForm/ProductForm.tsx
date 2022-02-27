@@ -37,17 +37,6 @@ function ProductForm({
               onBlur={() => validateForm('title')}
             />
             <Field
-              id={'image'}
-              type={'text'}
-              label={"Imagem"}
-              value={getForm().image}
-              onChange={(event: any) =>
-                setForm('image', event?.target.value)
-              }
-              errorMessages={getValidations('image')}
-              onBlur={() => validateForm('image')}
-            />
-            <Field
               id={'description'}
               type={'text'}
               label={"Descrição"}
@@ -68,6 +57,17 @@ function ProductForm({
               }
               errorMessages={getValidations('value')}
               onBlur={() => validateForm('value')}
+            />
+            <Field
+              id={'image'}
+              type={'text'}
+              label={"Imagem"}
+              value={getForm().image}
+              onChange={(event: any) =>
+                setForm('image', event?.target.value)
+              }
+              errorMessages={getValidations('image')}
+              onBlur={() => validateForm('image')}
             />
           </div>
           <div>

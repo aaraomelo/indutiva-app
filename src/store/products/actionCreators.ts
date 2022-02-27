@@ -21,6 +21,9 @@ export const setProductFormField = (payload: any) =>
 export const validateProductForm = (payload?: any) =>
   ({ type: actionTypes.VALIDATE_PRODUCT_FORM, payload });
 
+export const setProductsSearch = (payload?: any) =>
+  ({ type: actionTypes.SET_PRODUCTS_SEARCH, payload });
+
 export const getProducts = () => (dispatch: any) => {
   const url = `${uri}/`;
   return GET(url, dispatch, getProductsStatus)

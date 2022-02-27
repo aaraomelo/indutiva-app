@@ -18,6 +18,7 @@ export const productsInitialState: ProductState = {
     description: ""
   },
   products: [],
+  search: [],
   validations: {
     title: [],
     image: [],

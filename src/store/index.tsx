@@ -1,4 +1,3 @@
-import React from 'react'
 import { Provider } from "react-redux";
 import { cloneElement } from 'react'
 import { AnyAction, combineReducers } from "redux";

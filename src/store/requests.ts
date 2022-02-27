@@ -1,6 +1,5 @@
 import axios, { AxiosError, AxiosResponse } from "axios";
 
-
 export const base_url = "http://localhost:3001";
 
 export const GET = (url: string, dispatch: any, requestAction: any) =>
