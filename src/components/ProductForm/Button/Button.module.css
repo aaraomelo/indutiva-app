@@ -1,0 +1,27 @@
+
+.btn {
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  border: 1px solid #00a8ff;
+  background: #00a8ff;
+  color: #fff;
+  font-weight: 600;
+  display: inline-block;
+  padding: .375rem 1rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+}
+
+.btn-send {
+  background-color: #8120A1;
+  border-color: #8120A1;
+}
+
+.btn-waiting {
+  background-color: #6b7a85;
+  border-color: #6b7a85;
+}

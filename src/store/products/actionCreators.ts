@@ -15,6 +15,12 @@ export const getProductsStatus = (payload: any) =>
 export const postProductStatus = (payload: any) =>
   ({ type: actionTypes.POST_PROCUCT_STATUS, payload })
 
+export const setProductFormField = (payload: any) =>
+  ({ type: actionTypes.SET_PRODUCT_FORM_FIELD, payload })
+
+export const validateProductForm = (payload?: any) =>
+  ({ type: actionTypes.VALIDATE_PRODUCT_FORM, payload });
+
 export const getProducts = () => (dispatch: any) => {
   const url = `${uri}/`;
   return GET(url, dispatch, getProductsStatus)

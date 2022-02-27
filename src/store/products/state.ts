@@ -12,10 +12,17 @@ export const productsInitialState: ProductState = {
     }
   },
   productForm: {
-    title: "title react",
-    image: "image react",
-    value: 100,
-    description: "description react"
+    title: "",
+    image: "",
+    value: 0,
+    description: ""
   },
   products: [],
+  validations: {
+    title: [],
+    image: [],
+    value: [],
+    description: []
+  },
+  isValidProduct: false
 }
